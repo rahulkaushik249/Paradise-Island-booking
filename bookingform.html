@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Booking Form </title>
+</head>
+
+<body>
+
+    <h1 style=" background-color: rgba(92, 6, 100, 0.811); text-align: center; color: white; font-family:  Helvetica, sans-serif;"> Schedule Your Holiday on Paradise Island !</h1>
+
+<form style="font-weight:bold;">  
+
+       <fieldset style="background-color: rgb(223, 188, 254); color: ;"> 
+        <legend style="font-size: x-large;  font-family:sans-serif; color: rgb(70, 1, 70);"> Personal Information:</legend>     
+        <br/> 
+       <label for="name"> Full name: </label>
+       <input type="text"
+              id="name" 
+              size="35" 
+              required 
+              name="fullname"
+              value="" 
+              placeholder="in capital letters" 
+              
+              /> 
+       
+       <br /> <br />
+       
+
+       <label for="mail"> Email:</label>
+       <input type="email" 
+              id="mail" 
+              name="email"
+              required  
+              placeholder="abc@gmail.com"
+              
+              />
+
+    
+       <br /> <br />
+
+       <label for="phonenumber"> Phone Number:</label>
+       <input type="text" 
+              id="phonenumber" 
+              name="phonenumber"
+              required  
+              placeholder="+91-8947465432"
+
+              />
+         
+        <br /> <br />
+
+       <label for="DOB"> Date of Birth:</label>
+       <input type="date" 
+              id="DOB" 
+              name="DOB"
+              required  
+              min="1990-01-01"
+              max="2005-01-01"
+
+              />
+
+              </fieldset>
+        <br /> <br />
+               <fieldset style="background-color: rgb(187, 224, 198); ">
+               <legend style="font-size: x-large;font-family: sans-serif;"> Trip Details:</legend>
+       <label for="arr"> Arrival:</label>
+       <input type="datetime-local" 
+              id="arr" 
+              name="arrival"
+              required  
+              
+
+              />
+
+              <br /> <br />
+
+       <label for="departure"> Departure:</label>
+       <input type="datetime-local" 
+              id="departure" 
+              name="departure"
+              required  
+              
+
+              />
+           <br /> <br />
+
+
+           <label for="travellers">Number of Travellers: </label>
+           <input type="number"
+                  id="travellers"
+                  name="traveller"
+                  required
+
+                  />
+
+                 
+                   
+                  <br /> <br />
+
+                  <label for="pref"> Accomodation Preferences: </label>
+                   <select id="pref" name="Accomodation" >
+                     <option value="">--Select--</option>
+                     <optgroup label="Costly:">
+                     <option value="Hotel">Hotel</option>
+                     <option value="Resort">Resort</option>
+                     <option value="Motel">Motel</option>
+                     </optgroup>
+                    
+                     <optgroup label="Affordable:">
+                     <option value="Home stay">Home stay</option>
+                     <option value="Guest house">Guest house</option>
+                     <option value="Villa">Villa</option>
+                     </optgroup>
+                   </select>
+
+                <br /> <br />
+               <fieldset >
+               <legend>Preferred Activities:</legend>
+           
+               <input type="checkbox" id="cb1" 
+                      value="Snorkelling" name="Activity" 
+                      checked/> 
+               <label for="cb1"> Snorkelling </label>
+               </br>
+
+
+               <input type="checkbox" id="cb2" 
+                      value="Hiking" name="Activity" checked/>
+               <label for="cb2"> Hiking </label>
+               </br>
+
+               <input type="checkbox" id="cb3" 
+                      value="Spa" name="Activity" />
+               <label for="cb3"> Spa </label>
+
+               <br/>
+               <p> Baby on Board ? </p>
+               <input id="yes" type="radio" 
+                      name="onBoard" value="Yes"/>
+               <label for="yes">Yes</label>
+
+               <input id="no"type="radio" 
+                      name="onBoard" value="No" checked/>
+               <label for="no">No</label>
+               <br/><br/>
+                  </fieldset>
+                  <br/>
+
+               <fieldset>
+               <legend>  Special Request: </legend>
+              <textarea name="request"
+                        cols="40"
+                        rows="10"
+                        placeholder="type your requests"
+              > </textarea>
+              
+                          </fieldset>
+
+               
+
+              <br /> <br />
+
+              <input type="button" value="Save"/>
+              <input type="Reset"  value="Reset"/>
+              <input type="submit" value="Submit"/>
+              
+              <button type="button">
+                      <img src="../paradise-island/assets/next.jpg"
+                           width="60"
+                           height="55"
+                      />
+                     </button>
+       
+
+
+                          </fieldset>
+
+
+</form>
+
+          
+</body>
+
+</html>
